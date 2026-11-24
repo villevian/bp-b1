@@ -76,7 +76,7 @@ const ASSIGNED=null;
 const SHOW_ALL=false;  // student page: show the whole level, open only assigned lessons           // e.g. {"1.1":"all","1.2":"all"} — null = show all
 const PROGRESS={};const COMMENTS={};
 const VARIANTS={"4.2": ["all"], "4.3": ["all"], "4.4": ["all"], "4.5": ["all"]};
-const PAGES={"4.2": ["lesson", "extra"], "4.3": ["lesson"], "4.4": ["lesson"], "4.5": ["lesson"]};  // pages ready per lesson in the template; missing → all three  // which track versions exist; missing → "all"             // filled from Supabase: {"1.1":"done","1.2":"progress"}
+const PAGES={"4.2": ["lesson", "extra"], "4.3": ["lesson", "speak"], "4.4": ["lesson"], "4.5": ["lesson"]};  // pages ready per lesson in the template; missing → all three  // which track versions exist; missing → "all"             // filled from Supabase: {"1.1":"done","1.2":"progress"}
 let track=(STUDENT&&STUDENT.track)||"all";
 const path=(n,t,f)=>`lessons/${n.replace(".","-").toLowerCase()}/${t}/${f}.html?v=202611170829`;
 function render(){
