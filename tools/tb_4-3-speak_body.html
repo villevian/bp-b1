@@ -42,51 +42,132 @@
 <div class="blk ans"><h3>Відповіді</h3><p><b>Slack huddle:</b> That reminds me · We’ll come to that later · before I forget<br><b>1:1:</b> Is this a good moment to start talking about · There will be plenty of time for that later · We’ll get to<br><b>Client call:</b> Anyway, as I was saying · Sorry, can I just finish this point? · I really think we should get to</p></div></section>
 
 <section id="s4" class="sec"><div class="bsec">4 Situation 1 · Sprint planning <span class="time">7 хв</span></div>
-<div class="blk aim"><h3>Твоя роль</h3><p>Дуже привітний PM, який хоче говорити про все, крім спринту. Твоя мета: дати їй вжити щонайменше 4 різні фрази. Погоджуйся на її пункти тільки тоді, коли вона повертає тему ввічливо.</p></div>
-<div class="blk run say"><h3>Твої перебивання (по черзі, від м’якого до сильного)</h3>
-<p>1. “Before we start — how was your weekend? Did you go anywhere?”</p>
-<p>2. “Oh, that reminds me — did you see the new office plants? Who chose them?!”</p>
-<p>3. (Коли вона про логін-баг) “Bugs, bugs… You know what, I read that AI will fix all bugs by 2027.”</p>
-<p>4. “Sorry, Slack ping… one sec… OK, where were we?”</p>
-<p>5. (Коли вона про демо) “Hmm, and what about the team party? We need a date for that too!”</p></div>
-<div class="blk tgt"><h3>Якщо вона… → ти</h3>
-<p><b>каже <i>We’ll come to that later</i></b> → “Sure, sure. So, the login bug?” (повертаєшся, нагороджуєш)</p>
-<p><b>просто ігнорує тебе і продовжує</b> → “Hmm, you’re very serious today 😅” (покажи, що стосунок постраждав)</p>
-<p><b>мовчить або губиться</b> → підкажи жестом на вокабуляр або: “Maybe we can talk about the weekend later?”</p>
-<p><b>швидко отримала 3 пункти</b> → додай перебивання 6: “Before I forget — can you also update the Jira board today?”</p></div>
-<div class="blk ans"><h3>Результат</h3><p>Хто фіксить баг і до коли, хто робить onboarding screen, дата демо. Ти погоджуєшся на будь-які розумні відповіді.</p></div></section>
+<div class="blk aim"><h3>Твоя роль</h3><p>Ти привітний PM, який любить поговорити про все, крім спринту. Катя — член команди. Їй треба домовитися про 3 речі: баг з логіном, екран онбордингу і дату демо. Інформацію даєш <b>тільки тоді, коли вона ввічливо повертає тебе до теми</b>. Це її винагорода.</p></div>
+<div class="blk big"><h3>Твої факти (тримай перед очима)</h3><ul>
+<li><b>Login bug:</b> користувачі з iPhone не можуть увійти через Google. Фіксить <b>Oleh</b> (backend), але до вівторка він зайнятий оновленням платежів. Реально: <b>фікс у середу, тест у четвер зранку</b>. Можна у вівторок увечері, але тоді запізняться платежі. Нехай Катя вирішує.</li>
+<li><b>Onboarding screen:</b> дизайнерка <b>Marta у відпустці до понеділка</b>. Варіанти: чекати Marta або віддати <b>Ivan</b> (junior, але швидкий).</li>
+<li><b>Demo:</b> клієнт хоче <b>четвер о 10:00</b>. Через баг це ризиковано. Ти пропонуєш <b>п’ятницю об 11:00</b>.</li></ul></div>
+<div class="blk run say"><h3>Крок 1 — Початок і перше відволікання</h3>
+<p><b>Ти:</b> “Hi Kate! Good to see you. Coffee ready? ☕ So… how was your weekend? Did you go anywhere?”</p>
+<p class="k"><i>Чекаємо від Каті:</i> коротко відповісти і повернути тему. Наприклад: “It was nice, thanks! There will be plenty of time for that later — can we start with the login bug?”</p>
+<p><b>Якщо повернула →</b> “Ha, OK, OK, you’re right. Business first. So, the login bug…” (переходь до кроку 2)</p>
+<p><b>Якщо довго розповідає про вихідні →</b> підтримуй розмову 30 секунд, потім: “Anyway… wait, what did we want to talk about?” Вона має сказати “Let’s get back to…” / “Can we move to the bug?”</p></div>
+<div class="blk run say"><h3>Крок 2 — Баг з логіном</h3>
+<p><b>Ти (інформація):</b> “Right, the login bug. iPhone users can’t log in with Google. Oleh can fix it, but he’s busy with the payments update until Tuesday.”</p>
+<p><b>Ти (відволікання):</b> “Oh, that reminds me — did you see the new plants in the office? Who chose them?! 🌵”</p>
+<p class="k"><i>Чекаємо:</i> “Ha, they’re funny! We’ll come to that later. So, when can Oleh fix the bug?”</p>
+<p><b>Ти:</b> “Sorry, sorry. Realistically — Wednesday. And QA can test it on Thursday morning.”</p>
+<p><b>Якщо питає “Can it be earlier?” →</b> “Hmm. Tuesday evening, maybe. But then the payments update will be late. It’s your call — what’s more important?” (чекай, поки вона вирішить і поясни <i>because…</i>)</p>
+<p><b>Друге відволікання, поки вона думає:</b> “Bugs, bugs… You know, I read that AI will fix all bugs by 2027. Do you believe that?”</p>
+<p class="k"><i>Чекаємо:</i> “Interesting! There will be plenty of time for that later. So — Wednesday?”</p>
+<p><b>Ти:</b> “OK, fair. Wednesday it is. Oleh, Wednesday, QA on Thursday.” ✅ <i>пункт 1 закрито</i></p></div>
+<div class="blk run say"><h3>Крок 3 — Екран онбордингу</h3>
+<p class="k"><i>Катя має сама перейти:</i> “Can we move to the onboarding screen?” / “Is this a good moment to start talking about…?”</p>
+<p><b>Якщо не переходить сама →</b> мовчи 3 секунди, потім: “So… what’s next on your list?”</p>
+<p><b>Ти (відволікання, «Slack»):</b> “Sorry — Slack ping… one second…” <i>(дивишся вбік 5 секунд)</i> “OK, sorry. Where were we?”</p>
+<p class="k"><i>Чекаємо:</i> “We were talking about the onboarding screen.” / “Anyway, as I was saying…”</p>
+<p><b>Ти (інформація):</b> “Right. Problem: Marta is on holiday until Monday. We can wait for her, or we can give it to Ivan. He’s a junior, but he’s fast. What do you think?”</p>
+<p><b>Якщо вибирає Ivan →</b> “Good. But can you check his designs on Wednesday?” <b>Якщо Marta →</b> “OK, but then it’s ready next Friday, not this week. Is that OK?”</p>
+<p>✅ <i>пункт 2 закрито</i></p></div>
+<div class="blk run say"><h3>Крок 4 — Дата демо</h3>
+<p><b>Ти (інформація):</b> “And the demo. The client wants Thursday at 10. Hmm… with the bug on Wednesday, that’s risky.”</p>
+<p><b>Ти (відволікання):</b> “Oh, and what about the team party? We need a date for that too! December 19th?”</p>
+<p class="k"><i>Чекаємо:</i> “We’ll get to the party in a moment. First, the demo — Thursday or Friday?”</p>
+<p><b>Ти:</b> “OK, OK. What about Friday at 11? I can write to the client.”</p>
+<p><b>Якщо погоджується →</b> “Perfect.” <b>Якщо пропонує інше →</b> погоджуйся, якщо вона пояснила <i>why</i>. ✅ <i>пункт 3 закрито</i></p></div>
+<div class="blk run say"><h3>Крок 5 — Завершення</h3>
+<p><b>Ти (бонус, якщо є час):</b> “Before I forget — can you also update the Jira board today?”</p>
+<p><b>Ти (підсумок):</b> “Great. So: Oleh fixes the bug by Wednesday, Ivan does the onboarding screen, and the demo is on Friday at 11. Thanks, Kate!”</p>
+<p><b>Ти (теплий фінал):</b> “And now… the plants and the party? 😄”</p></div>
+<div class="blk tgt"><h3>Якщо вона… → ти (на будь-якому кроці)</h3>
+<p><b>повертає ввічливо (коротка реакція + фраза)</b> → “Sure, sorry!” і даєш наступну інформацію</p>
+<p><b>просто ігнорує тебе і говорить далі</b> → “Hmm, you’re very serious today 😅” (покажи, що стосункам це не на користь)</p>
+<p><b>мовчить або губиться</b> → покажи очима на словник угорі або підкажи: “Maybe we can talk about that later?”</p>
+<p><b>повторює ту саму фразу втретє</b> → “Another phrase, please!” (вихід з ролі на 2 секунди)</p></div>
+<div class="blk ans"><h3>Розбір після ролі (2 хв)</h3><p>“What did we agree? Who, what, when?” Вона має назвати: Oleh, середа · Ivan або Marta · п’ятниця 11:00. Потім покажи 2 фрази, які вона не вжила, і 1–2 помилки з твоїх записів.</p></div></section>
 
 <section id="s5" class="sec"><div class="bsec">5 Situation 2 · Client call <span class="time">7 хв</span></div>
-<div class="blk aim"><h3>Твоя роль</h3><p>Зайнятий клієнт, як Mateo: відповідаєш на дзвінки, читаєш повідомлення, перепитуєш. Тут вона тренує <i>Anyway, as I was saying</i> і <i>Can I just finish this point?</i></p></div>
-<div class="blk run say"><h3>Твої перебивання</h3>
-<p>1. (через 20 секунд) “Sorry, I have to take this… [10 секунд пауза] OK, sorry. What were you saying?”</p>
-<p>2. (поки вона пояснює дизайн) “Yes, yes, but how much —” (перебиваєш посередині)</p>
-<p>3. “By the way, are you going to the Web Summit this year?”</p>
-<p>4. “Hmm, sorry, I was reading an email. Version what?”</p>
-<p>5. (коли чує €3,000) “Three thousand?! That reminds me — your last invoice was late.”</p></div>
+<div class="blk aim"><h3>Твоя роль</h3><p>Ти зайнятий клієнт, як Mateo: береш дзвінки, читаєш пошту, перебиваєш на півслові. Катя працює в дизайн-студії. Тут вона тренує <i>Anyway, as I was saying…</i> і <i>Sorry, can I just finish this point?</i></p></div>
+<div class="blk big"><h3>Твої факти</h3><ul>
+<li><b>Design v2:</b> тобі загалом подобається, але <b>логотип замалий</b>. Погоджуєшся, якщо Катя пообіцяє його збільшити.</li>
+<li><b>€3,000 за два додаткові тижні:</b> спершу “That’s a lot!”. Готовий погодитися, якщо <b>оплата двома частинами</b> або Катя пояснить, що саме входить у роботу. Якщо вона одразу дає знижку, погоджуйся, але після ролі обговоріть, чи треба було.</li>
+<li><b>Наступний дзвінок:</b> спершу пропонуєш незручне “Friday at 7 pm?”. Погоджуєшся на <b>вівторок о 10:00</b> або будь-який робочий час, який запропонує вона.</li></ul></div>
+<div class="blk run say"><h3>Крок 1 — Початок</h3>
+<p><b>Ти:</b> “Hi, hi! Sorry, crazy day. OK, I have ten minutes. Go.”</p>
+<p class="k"><i>Катя починає про design v2.</i> Через 15–20 секунд:</p>
+<p><b>Ти (дзвінок):</b> “Sorry — I have to take this.” <i>(10 секунд «говориш по телефону»: “Yes… yes… no, tomorrow…”)</i> “OK, sorry. What were you saying?”</p>
+<p class="k"><i>Чекаємо:</i> “No problem. Anyway, as I was saying, version 2 has a simpler menu and bigger buttons.”</p>
+<p><b>Ти:</b> “Yes, I saw it. I like it. But the logo is very small.”</p>
+<p><b>Якщо обіцяє збільшити →</b> “OK, then yes — version 2 is approved.” ✅ <i>пункт 1</i></p></div>
+<div class="blk run say"><h3>Крок 2 — Гроші</h3>
+<p class="k"><i>Катя пояснює: два тижні роботи коштують €3,000.</i> Перебий посередині речення:</p>
+<p><b>Ти:</b> “Wait, wait — how much —”</p>
+<p class="k"><i>Чекаємо:</i> “Sorry, can I just finish this point? Then we’ll talk about the price.”</p>
+<p><b>Ти:</b> “Of course, sorry. Go on.” <i>(даєш договорити)</i></p>
+<p><b>Ти (після суми):</b> “Three thousand?! That’s a lot. Oh, that reminds me — your last invoice was late, by the way.”</p>
+<p class="k"><i>Чекаємо:</i> “I’m sorry about that. We’ll come to the invoice later. So, can we agree on the two weeks?”</p>
+<p><b>Якщо пропонує оплату частинами або пояснює, що входить у роботу →</b> “OK, that sounds fair. Let’s do it.” ✅ <i>пункт 2</i></p>
+<p><b>Якщо мовчить →</b> “Hmm. Can you do it cheaper?” (вона має торгуватися або пояснити)</p></div>
+<div class="blk run say"><h3>Крок 3 — Наступний дзвінок</h3>
+<p><b>Ти (відволікання):</b> “By the way, are you going to the Web Summit this year? I have two tickets…”</p>
+<p class="k"><i>Чекаємо:</i> “Maybe! We’ll get to that in a moment. First — when can we have our next call?”</p>
+<p><b>Ти:</b> <i>(читаєш пошту)</i> “Hmm… sorry, I was reading an email. Next call? Friday at 7 pm?”</p>
+<p class="k"><i>Чекаємо:</i> Катя пропонує інший час.</p>
+<p><b>Ти:</b> “Tuesday at 10? Fine. Send me an invite.” ✅ <i>пункт 3</i></p>
+<p><b>Ти (фінал):</b> “OK, I have to run. Thanks — and think about the Web Summit!”</p></div>
 <div class="blk tgt"><h3>Якщо вона… → ти</h3>
 <p><b>каже <i>Anyway, as I was saying…</i></b> → “Right, right, version 2. Go on.”</p>
-<p><b>каже <i>Sorry, can I just finish this point?</i></b> → “Of course, sorry.” (і даєш договорити)</p>
-<p><b>одразу здається і обговорює рахунок</b> → після ролі запитай: “Did you get the approval? What happened?”</p>
-<p><b>просить дату наступного дзвінка</b> → назви незручну: “Friday at 7 pm?” Хай домовиться про інший час.</p></div></section>
+<p><b>каже <i>Sorry, can I just finish this point?</i></b> → “Of course, sorry.” і мовчиш, поки договорить</p>
+<p><b>одразу перемикається на прострочений рахунок</b> → поговори про рахунок, а після ролі запитай: “Did you get the approval? What happened?”</p></div>
+<div class="blk ans"><h3>Розбір</h3><p>“Did you get all three: approval, €3,000, next call? Which moment was the most difficult?” Порівняйте з Beata, Option A.</p></div></section>
 
 <section id="s6" class="sec"><div class="bsec">6 Situation 3 · 1:1 with your manager <span class="time">7 хв</span></div>
-<div class="blk aim"><h3>Твоя роль</h3><p>Менеджер у гарному настрої, любить поговорити. <b>Тут головне — картка стилю.</b> Вона тягне A (тримати тему) або B (go with the flow). Ти реагуєш по-різному, як Mateo у відео.</p></div>
-<div class="blk run say"><h3>Твої теми для відволікання</h3>
-<p>1. “Did you see the photos from the team party? Who was the DJ?”</p>
-<p>2. “I’m planning my holiday — Portugal or Croatia, what do you think?”</p>
-<p>3. “Between us, there might be a reorganisation next year…”</p>
-<p>4. “Oh, and my dog ate my headphones yesterday 😂”</p></div>
-<div class="blk tgt"><h3>Як реагувати на стиль</h3>
-<p><b>Option A (stay on track):</b> після 2-го повернення до теми стаєш трохи холоднішим: “OK… fine. The course. How much?” Даєш гроші, але не дві години: “Let me think about the time.”</p>
-<p><b>Option B (go with the flow):</b> тобі приємно, ви довго говорите. Коли вона нарешті питає (<i>Is this a good moment to…?</i>): “Of course! Send me the link, I’ll approve it.” Але <b>часу вже мало</b>: дату відповіді «забуваєш», вона мусить нагадати.</p>
-<p><b>Розбір:</b> “What did you get? What did it cost you — time or the relationship?” Це висновок відео 4.3.4.</p></div></section>
+<div class="blk aim"><h3>Твоя роль</h3><p>Менеджер у гарному настрої, любить поговорити. <b>Тут головне — картка стилю.</b> Катя тягне A (тримати тему) або B (go with the flow). Ти реагуєш по-різному, як Mateo у відео.</p></div>
+<div class="blk big"><h3>Твої факти</h3><ul>
+<li><b>Бюджет на навчання:</b> на цей рік лишилося <b>€500</b>, тож €300 — можливо.</li>
+<li><b>Дві години на тиждень:</b> зараз дедлайн релізу, тому пропонуєш <b>одну годину зараз і дві з січня</b>.</li>
+<li><b>Коли відповідь:</b> “I need to ask HR — I’ll tell you <b>by Friday</b>.”</li></ul></div>
+<div class="blk run say"><h3>Крок 1 — Початок (однаково для A і B)</h3>
+<p><b>Ти:</b> “Kate! Come in, sit down. How are you? Did you see the photos from the team party? Who was the DJ, by the way? 😂”</p></div>
+<div class="blk run say"><h3>Option A — вона тримає тему</h3>
+<p class="k"><i>Чекаємо:</i> “Ha, yes, it was fun! There will be plenty of time for that later. Is this a good moment to start talking about my training course?”</p>
+<p><b>Ти:</b> “Oh. OK, sure. What course?” <i>(трохи менш тепло)</i></p>
+<p class="k"><i>Катя пояснює курс і ціну €300.</i></p>
+<p><b>Ти (відволікання):</b> “Hmm. You know, I’m planning my holiday — Portugal or Croatia, what do you think?”</p>
+<p class="k"><i>Чекаємо:</i> “Both are great! We’ll come to that later. So, the €300?”</p>
+<p><b>Ти:</b> “OK… fine. The money is OK, we have €500 left this year.” ✅</p>
+<p class="k"><i>Катя просить 2 години на тиждень.</i></p>
+<p><b>Ти (холодніше):</b> “Two hours? Hmm. Let me think about the time.” <i>(не даєш відповіді)</i></p>
+<p><b>Якщо вона наполягає ввічливо →</b> “OK. One hour now, two from January.” ✅</p>
+<p><b>Якщо питає, коли відповідь →</b> “By Friday. I need to ask HR.” ✅ <i>(коротко, діловито)</i></p></div>
+<div class="blk run say"><h3>Option B — вона go with the flow</h3>
+<p class="k"><i>Вона підтримує розмову про вечірку.</i> Говори охоче 1–2 хвилини:</p>
+<p><b>Ти:</b> “And I’m planning my holiday — Portugal or Croatia, what do you think?” · “Between us, there might be a reorganisation next year…” · “Oh, and my dog ate my headphones yesterday 😂”</p>
+<p class="k"><i>Чекаємо, що в якийсь момент вона знайде паузу:</i> “Is this a good moment to start talking about my course?”</p>
+<p><b>Ти (тепло):</b> “Of course! Tell me.” → “€300? No problem — send me the link, I’ll approve it.” ✅</p>
+<p class="k"><i>Катя просить 2 години на тиждень.</i></p>
+<p><b>Ти:</b> “Hmm, with the release… one hour now, two from January? OK?” ✅</p>
+<p><b>Ти (підступ):</b> “Oh no, look at the time! I have another meeting. Let’s talk soon!” <i>(дату відповіді не називаєш — вона має сама нагадати: “Before I forget — when will I get an answer?”)</i></p>
+<p><b>Якщо нагадала →</b> “Right! By Friday, I promise.” ✅</p></div>
+<div class="blk tgt"><h3>Розбір</h3><p>“What did you get? What did it cost you — time or the relationship?” Це висновок відео 4.3.4. Option A: швидко, але менеджер став холоднішим. Option B: тепло, але ледь не забули про дату відповіді.</p></div></section>
 
 <section id="s7" class="sec"><div class="bsec">7 Role swap <span class="time">6 хв</span></div>
-<div class="blk aim"><h3>Твоя роль</h3><p>Тепер ти тримаєш тему. Твій порядок денний: <b>1) дата релізу, 2) хто тестує, 3) бюджет на рекламу.</b> Катя має змінити тему щонайменше 4 рази фразами з групи «Changing the subject».</p></div>
-<div class="blk run say"><h3>Як ти повертаєш (модель для неї)</h3>
-<p>“Ha, interesting! We’ll come to that later.” · “There will be plenty of time for that later.” · “We’ll get to the conference in a moment. First, the release date.” · “Let’s get back to the budget.”</p></div>
-<div class="blk watch"><h3>На що звертати увагу</h3><ul><li><i>That reminds me</i> працює тільки тоді, коли нова тема хоч трохи пов’язана з попередньою. Якщо зв’язку нема, краще <i>Before I forget</i>.</li><li><i>Is this a good moment to…?</i> звучить найввічливіше. Хвали, якщо вжила.</li></ul></div></section>
+<div class="blk aim"><h3>Твоя роль</h3><p>Тепер ти ведеш зустріч і тримаєш тему. Катя має змінити тему щонайменше 4 рази фразами з групи «Changing the subject». Ти коротко відповідаєш на її тему і повертаєш до свого.</p></div>
+<div class="blk big"><h3>Твій порядок денний і факти</h3><ol>
+<li><b>Дата релізу:</b> 12 грудня, середа.</li>
+<li><b>Хто тестує:</b> QA-команда плюс 2 зовнішні тестувальники з понеділка.</li>
+<li><b>Бюджет на рекламу:</b> €1,500 на Instagram і LinkedIn.</li></ol></div>
+<div class="blk run say"><h3>Сценарій</h3>
+<p><b>Ти (старт):</b> “OK, Kate, three things today: the release date, testing, and the ad budget. First — the release is on December 12th.”</p>
+<p class="k"><i>Катя змінює тему (Reddit / AI tool / conference / laptop / holiday).</i></p>
+<p><b>Твої відповіді на її теми:</b></p>
+<p>Reddit thread → “Ha, I saw it! We’ll come to that later. So, December 12th — is that OK for your team?”</p>
+<p>New AI tool → “Yes, everybody’s talking about it. There will be plenty of time for that later. Now — testing.”</p>
+<p>Conference → “Maybe! We’ll get to the conference in a moment. First: two external testers start on Monday.”</p>
+<p>Slow laptop → “Oh no. Send me an email about it. Let’s get back to the budget.”</p>
+<p>Holiday → “Lucky you! Tell me at lunch. Anyway, as I was saying, the ad budget is €1,500.”</p>
+<p><b>Ти (фінал):</b> “Great, all three done. Now — tell me about that AI tool!” 😄</p></div>
+<div class="blk watch"><h3>На що звертати увагу</h3><ul><li><i>That reminds me</i> працює тільки тоді, коли нова тема хоч трохи пов’язана з попередньою (тестування → AI tool). Якщо зв’язку нема, краще <i>Before I forget</i>.</li><li><i>Is this a good moment to…?</i> звучить найввічливіше. Хвали, якщо вжила.</li></ul></div></section>
 
 <section id="s8" class="sec"><div class="bsec">8 Your dialogue <span class="time">5 хв / вдома</span></div>
 <div class="blk run"><h3>Як вести</h3><ul><li>Це вправа 9B з книги: короткий діалог на основі сьогоднішньої розмови.</li><li>Перевіряєш в адмінці. Залиш коментар: які фрази вжиті правильно, а одну фразу попроси додати.</li><li>Питання B про «її Mateo» на початку наступного уроку дає хороший lead-in.</li></ul></div>
