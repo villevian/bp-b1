@@ -63,11 +63,11 @@ gaps = [("Can we m", "ove", " to the budget?", ["move"]),
         ("Let’s get b", "ack", " to the bug fix.", ["back"])]
 rows = ""
 for i, (a, _, b, ans) in enumerate(gaps, 1):
-    k = f"r1_{i}"; KEY[k] = ans
-    rows += (f'<div class="row"><span class="w">{i}</span>{E(a)}<input class="g" data-k="{k}" size="8" autocomplete="off">{E(b)}'
+    k = f"r1_{i}"; KEY[k] = ans + [ans[0][1:]]
+    rows += (f'<div class="row"><span class="w">{i}</span>{E(a[:-1])}<input class="g" data-k="{k}" size="9" placeholder="{E(a[-1])}…" autocomplete="off">{E(b)}'
              f'<div class="fb" id="fb_{k}"><span class="h"></span></div></div>')
 secs.append(("Warm-up", "Remember the phrases",
-    ins(1, "Close the vocabulary box. Complete the phrases from memory. The first letter is there to help you.") + rows +
+    ins(1, "Close the vocabulary box. Complete the phrases from memory. Write the <b>whole word</b> — the first letter in the box is a hint.") + rows +
     '<div class="ctl"><button class="btn" onclick="chkSet(\'r1\')">Check</button><span class="res" id="r_r1"></span></div>'
     '<p class="hint2">Then say each phrase aloud twice: first slowly, then fast and friendly. Smile — these phrases need a polite tone.</p>'))
 
