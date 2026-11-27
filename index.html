@@ -78,7 +78,7 @@ const PROGRESS={};const COMMENTS={};
 const VARIANTS={"1.1": ["all"], "4.2": ["all"], "4.3": ["all"], "4.4": ["all"], "4.5": ["all"]};
 const PAGES={"1.1": ["flip", "lesson", "speak", "hw", "words", "clean", "extra"], "4.2": ["lesson", "extra"], "4.3": ["lesson"], "4.4": ["lesson"], "4.5": ["lesson"]};  // pages ready per lesson in the template; missing → all three  // which track versions exist; missing → "all"             // filled from Supabase: {"1.1":"done","1.2":"progress"}
 let track=(STUDENT&&STUDENT.track)||"all";
-const path=(n,t,f)=>`lessons/${n.replace(".","-").toLowerCase()}/${t}/${f}.html?v=202611271806`;
+const path=(n,t,f)=>`lessons/${n.replace(".","-").toLowerCase()}/${t}/${f}.html?v=202611271913`;
 function render(){
  const box=document.getElementById("units");box.innerHTML="";let tot=0,done=0;
  DATA.units.forEach(([u,title,ls])=>{
